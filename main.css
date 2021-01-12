@@ -34,7 +34,7 @@ section {
   min-height: 100vh;
 }
 
-section.banner {
+.banner {
   width: 100%;
   position: relative;
   min-height: 100vh;
@@ -70,6 +70,18 @@ section.banner {
   align-items: center;
 }
 
+@media (max-width: 991px) {
+  .banner .imgSidebar img {
+    display: none;
+  }
+
+  .banner .content,
+  .sidebar {
+    width: 100%;
+    padding: 40px;
+  }
+}
+
 .logoText {
   position: absolute;
   top: 40px;
@@ -79,6 +91,13 @@ section.banner {
   background: #000;
   color: #fff;
   padding: 0 5px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 991px) {
+  .logoText {
+    left: 40px;
+  }
 }
 
 .banner .content h4 {
@@ -162,7 +181,7 @@ div.sidebar ul li a:hover {
   justify-content: center;
   align-items: center;
   left: 100px;
-  bottom: 10px;
+  bottom: 20px;
 }
 
 .sci li {
@@ -183,6 +202,8 @@ div.sidebar ul li a:hover {
 
 section.about {
   background: #000;
+  padding: 100px;
+  min-height: 100vh;
 }
 
 div.title {
@@ -372,4 +393,67 @@ div.copyright {
 div.copyright p {
   font-size: 16px;
   margin: 0;
+}
+
+@media (max-width: 991px) {
+  .toggle {
+    right: 40px;
+  }
+
+  .sci {
+    left: 40px;
+  }
+
+  section.about {
+    padding: 40px;
+  }
+
+  .about .about-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .about .about-content .text {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  div.title p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  div.text-img {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .contact .contactForm {
+    width: 100%;
+  }
+
+  .contactForm .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  section.contact .contactForm .row .col50 {
+    width: 100%;
+    margin: 10px;
+  }
+
+  div.sidebar ul li a {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 500px) {
+  section.projects .project-content .projects {
+    padding: 30px 20px;
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+  }
 }
