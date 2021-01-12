@@ -12,8 +12,8 @@
   position: fixed;
   top: 30px;
   right: 30px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background: #000 url(images/menu.png);
   background-size: 40px;
   background-position: center;
@@ -29,11 +29,6 @@
   background-repeat: no-repeat;
 }
 
-/* section {
-  padding: 100px;
-  min-height: 100vh;
-} */
-
 .banner {
   width: 100%;
   position: relative;
@@ -44,7 +39,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 500px;
+  width: 400px;
   height: 100%;
 }
 
@@ -52,7 +47,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 520px;
   height: 100%;
   object-fit: cover;
 }
@@ -70,7 +65,7 @@
   align-items: center;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 700px) {
   .banner .imgSidebar img {
     display: none;
   }
@@ -106,7 +101,7 @@
 }
 
 .banner .content h4 span {
-  color: #00bcd4;
+  color: #5e9e9f;
   font-size: 1.5em;
   font-weight: 700;
 }
@@ -124,7 +119,7 @@
 }
 
 .btn {
-  background: #00bcd4;
+  background: #5e9e9f;
   color: #fff;
   text-decoration: none;
   padding: 10px 30px;
@@ -171,7 +166,7 @@ div.sidebar ul li a {
 }
 
 div.sidebar ul li a:hover {
-  color: #00bcd4;
+  color: #5e9e9f;
 }
 
 .sci {
@@ -234,6 +229,10 @@ div.text-img img {
   div.text p {
     margin-top: 10px;
   }
+
+  div.text-img img {
+    margin-top: 10px;
+  }
 }
 /* About Ends */
 
@@ -243,10 +242,10 @@ section.project {
   background: #fff;
 }
 
-div.projects h1 {
+div.projects h2 {
   text-align: center;
-  color: #00bcd4;
-  font-size: 3em;
+  color: #5e9e9f;
+  font-size: 2.2em;
 }
 
 /* Projects End */
@@ -291,7 +290,7 @@ section.contact .contactForm .row .col100 {
 .contact .contactForm .row textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid rgb(104, 103, 103);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   outline: none;
   background: #111;
   color: #fff;
@@ -300,7 +299,7 @@ section.contact .contactForm .row .col100 {
 }
 
 .contact .contactForm .row input[type="submit"] {
-  background: #00bcd4;
+  background: #5e9e9f;
   color: #fff;
   padding: 10px 30px;
   font-weight: 500;
