@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .toggle {
@@ -178,4 +179,197 @@ div.sidebar ul li a:hover {
 
 .sci li img:hover {
   opacity: 1;
+}
+
+section.about {
+  background: #000;
+}
+
+div.title {
+  width: 100%;
+  text-align: center;
+}
+
+div.title h2 {
+  position: relative;
+  color: #00bcd4;
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.title.white h2,
+.title.white p {
+  color: #fff;
+}
+
+.title.white h2:before {
+  background: #fff;
+}
+
+div.title p {
+  max-width: 700px;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+div.title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: -5px;
+  width: 60px;
+  height: 3px;
+  background: #000;
+}
+
+div.about-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+div.text {
+  width: 49%;
+  min-width: 49%;
+}
+
+div.text p {
+  color: #fff;
+}
+
+div.text-img {
+  margin-left: 20px;
+}
+
+div.text-img img {
+  max-width: 100%;
+}
+
+section.projects .project-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div.project-content {
+  margin-top: 20px;
+}
+
+section.projects .project-content .projects {
+  position: relative;
+  width: 265px;
+  height: 265px;
+  margin: 10px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+section.projects .project-content .projects .project-img,
+section.projects .project-content .projects .img-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.projects .project-content .projects .project-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.projects .project-content .projects .img-text {
+  background: #000;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+section.projects .project-content .projects:hover .img-text {
+  opacity: 1;
+}
+
+section.projects .project-content .projects .img-text h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+section.contact {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section.contact .contactForm {
+  position: relative;
+  /* width: 70px; */
+  margin-top: 20px;
+}
+
+section.contact .contactForm .row {
+  width: 100%;
+  display: flex;
+}
+
+section.contact .contactForm .row .col50 {
+  width: 50%;
+  margin: 10px;
+}
+
+section.contact .contactForm .row .col100 {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+.contact .contactForm .row input,
+.contact .contactForm .row textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #fff;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact .contactForm .row input[type="submit"] {
+  background: #00bcd4;
+  color: #fff;
+  padding: 10px 30px;
+  font-weight: 500;
+  display: inline-block;
+  letter-spacing: 2px;
+  cursor: pointer;
+  max-width: 150px;
+}
+
+.contact .contactForm .row textarea {
+  height: 100px;
+}
+
+div.copyright {
+  color: #fff;
+  background: #111;
+  text-align: center;
+  padding: 10px;
+}
+
+div.copyright p {
+  font-size: 16px;
+  margin: 0;
 }
