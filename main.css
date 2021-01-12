@@ -291,7 +291,7 @@ section.contact .contactForm .row .col100 {
 .contact .contactForm .row textarea {
   width: 100%;
   padding: 10px;
-  border: none;
+  border: 1px solid rgb(104, 103, 103);
   outline: none;
   background: #111;
   color: #fff;
