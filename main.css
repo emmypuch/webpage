@@ -87,7 +87,7 @@ section {
   top: 40px;
   left: 100px;
   font-size: 1.2em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   background: #000;
   color: #fff;
   padding: 0 5px;
@@ -232,6 +232,7 @@ div.title p {
   max-width: 700px;
   margin-top: 15px;
   display: inline-block;
+  font-size: 15px;
 }
 
 div.title h2::before {
@@ -326,6 +327,24 @@ section.projects .project-content .projects .img-text h3 {
   font-size: 1em;
 }
 
+@media (max-width: 700px) {
+  div.title h2 {
+    font-size: 1.6em;
+  }
+
+  div.project-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.projects .project-content .projects {
+    padding: 30px 20px;
+    max-width: 100%;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
 section.contact {
   background: #000;
   display: flex;
@@ -336,7 +355,7 @@ section.contact {
 
 section.contact .contactForm {
   position: relative;
-  /* width: 70px; */
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -380,7 +399,7 @@ section.contact .contactForm .row .col100 {
 }
 
 .contact .contactForm .row textarea {
-  height: 100px;
+  height: 200px;
 }
 
 div.copyright {
@@ -429,14 +448,15 @@ div.copyright p {
     margin-top: 10px;
   }
 
-  .contact .contactForm {
+  section.contact .contactForm {
     width: 100%;
   }
 
-  .contactForm .row {
+  section.contact .contactForm .row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    max-width: 100%;
   }
 
   section.contact .contactForm .row .col50 {
@@ -444,16 +464,15 @@ div.copyright p {
     margin: 10px;
   }
 
+  .contact .contactForm .row input {
+    width: 250px;
+  }
+
+  .contact .contactForm .row textarea {
+    width: 250px;
+  }
+
   div.sidebar ul li a {
     font-size: 1.5em;
-  }
-}
-
-@media (max-width: 500px) {
-  section.projects .project-content .projects {
-    padding: 30px 20px;
-    max-width: 100%;
-    width: 100%;
-    margin: 10px 0;
   }
 }
