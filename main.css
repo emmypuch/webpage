@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+html {
+  cursor: none;
+}
+
+body #magicMouseCursor {
+  border: 1px solid #5e9e9f !important;
+}
+
+body #magicPointer {
+  background: #5e9e9f;
+}
+
+body #magicPointer.is-hover {
+  background: #5e9e9f;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -386,5 +402,3 @@ div.copyright p {
     font-size: 1.5em;
   }
 }
-
-/* cursor */
