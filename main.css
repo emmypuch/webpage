@@ -476,6 +476,10 @@ section.contact .contactForm .row .col100 {
   text-align: center;
 }
 
+form {
+  width: 100%;
+}
+
 .contact .contactForm .row input,
 .contact .contactForm .row textarea {
   width: 100%;
@@ -520,6 +524,10 @@ div.copyright p {
 }
 
 @media (max-width: 991px) {
+  form {
+    width: 100%;
+  }
+
   .toggle {
     right: 40px;
   }
