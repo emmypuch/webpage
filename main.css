@@ -308,6 +308,8 @@ div.projects-cards {
   position: relative;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .container .card {
