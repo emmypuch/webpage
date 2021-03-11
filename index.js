@@ -14,3 +14,21 @@ let options = {
   outerHeight: 30,
 };
 magicMouse(options);
+
+// Date
+const date = document.querySelector("#date");
+date.innerHTML = new Date().getFullYear();
+
+// Top Link
+const topLink = document.querySelector(".top-link");
+
+window.addEventListener("scroll", function () {
+  const scrollHeight = window.pageYOffset;
+
+  if(scrollHeight > 500) {
+    topLink.classList.add("show-link");
+  } else {
+    topLink.classList.remove("show-link");
+  }
+});
+
