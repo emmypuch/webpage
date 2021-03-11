@@ -32,3 +32,15 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Scroll Link
+const scrollLinks = document.querySelectorAll(".scroll-link");
+
+scrollLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault()
+
+    const id = e.currentTarget.getAttribute("href");
+    console.log(id)
+  });
+});
+
